@@ -14,4 +14,9 @@ public class Programmer implements Employee {
 
         return this.salary;
     }
+
+    @Override
+    public Account getAccount() {
+        return new Account(salary, "Employee Account");
+    }
 }

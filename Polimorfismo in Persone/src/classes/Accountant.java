@@ -2,18 +2,18 @@ package classes;
 
 import interfaces.Employee;
 
-public class Secretary implements Employee {
-
+public class Accountant implements Employee {
     private double salary;
 
-    public Secretary(double salary) {
+    public Accountant(double salary) {
 
         this.salary = salary;
     }
 
     @Override
     public double getSalary() {
-        return 0;
+
+        return this.salary;
     }
 
     @Override

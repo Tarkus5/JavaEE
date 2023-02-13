@@ -22,12 +22,19 @@ public class Company {
         }
     }
 
-    public double payEmployees(){
-        int sum = 0;
+    Account companyAccount = new Account(capital, "Appple");
+
+    public void payEmployees(){
+        //int sum = 0;
         for (int i = 0; i < numberEmployee; i++){
-            sum += employees[i].getSalary();
+            //sum += employees[i].getSalary();
+            companyAccount.transferMoney(companyAccount, employees[i].getAccount(), employees[i].getSalary());
         }
-        return sum;
+       // return sum;
+        companyAccount.getAmount();
+        System.out.println("Hai effettuato bonifici per un totale di " + (capital - companyAccount.getAmount()) + "€");
+        System.out.println("Il tuo capitale rimanente è di " + companyAccount.getAmount() + "€");
+
     }
 
     public double budget() {
