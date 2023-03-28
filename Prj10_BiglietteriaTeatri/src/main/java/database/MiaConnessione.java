@@ -7,8 +7,8 @@ import java.sql.SQLException;
 public class MiaConnessione {
 	
 	private final String URL = "jdbc:mysql://localhost:3306/ifts"; //Stringhe di connessione
-	private final String USER = "alessandro";
-	private final String PASS = "12345aA";
+	private final String USER = "root";
+	private final String PASS = "root";
 	
 	private Connection conn;
 	
